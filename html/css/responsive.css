@@ -1,0 +1,219 @@
+/***********************/
+/****** タブレット ******/
+/***********************/
+@media(max-width:959px) {
+    /* 共通
+    --------------------------------------------------------- */
+    .container {
+        padding: 0;
+    }
+
+    /* ヘッダー
+    --------------------------------------------------------- */
+    #responsive-menu-bar {
+        display: inline-block;
+        font-size: 25px;
+        margin-left: 15px;
+        float: left;
+        line-height: 65px;
+    }
+
+    #responsive-menu {
+        margin-top: -3px;
+        position: relative;
+        z-index: 100;
+        clear: both;
+    }
+
+    #responsive-menu li {
+        background-color: rgba(0,0,0,0.3);
+        height: 40px;
+        line-height: 40px;
+        padding-left: 15px;
+    }
+
+    #responsive-menu li a {
+        color: #fff;
+        -webkit-transition: all .25s;
+           -moz-transition: all .25s;
+            -ms-transition: all .25s;
+             -o-transition: all .25s;
+                transition: all .25s;
+    }
+
+    #responsive-menu li a:hover {
+        color: rgba(0,0,0,0.6);
+    }
+
+    .header-left {
+        float: none;
+        display: inline-block;
+        position: relative;
+        width: 85%;
+        margin-top: 12px;
+    }
+
+    .header-left .logo {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .header-left .sub-logo {
+        font-size: 13px;
+        top: 30px;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    /* アバウト
+    --------------------------------------------------------- */
+    .profile-wrapper {
+        letter-spacing: 0em;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 30%;
+        margin-bottom: 50px;
+    }
+
+    .profile-txt {
+        width: 80%;
+        letter-spacing: none;
+    }
+
+    .archive-wrapper h2 {
+        background-color: #e0e0e0;
+        font-size: .9em;
+        padding: 5px 20px 5px 5px;
+    }
+
+    /* ポートフォリオ
+    --------------------------------------------------------- */
+    .portfolio-wrapper {
+        margin-left: 13.5%;
+        letter-spacing: 0em;
+    }
+
+    .portfolio-wrapper .portfolio-box {
+        width: 40%;
+        max-height: 230px;
+        margin: 1%;
+    }
+
+    /* ブログページ
+    --------------------------------------------------------- */
+    .blog-wrapper {
+        padding: 0 10%;
+    }
+
+    .blog-area .item .blur {
+        width: 100%;
+        max-height: 430px;
+        overflow: hidden;
+    }
+    .blog-area .item .blur img{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .blog-area .item .blur .hover-ttl {
+        display: none;
+    }
+
+    .item-info .item-ttl {
+        display: block;
+        font-size: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+    }
+    .item-info .item-cat,
+    .item-info .item-date {
+        margin-bottom: 15px;
+    }
+
+    /* お問い合わせページ
+    --------------------------------------------------------- */
+    .contact-wrapper {
+        width: 80%;
+    }
+
+    /* シングルページ
+    --------------------------------------------------------- */
+    .single-eyecatch {
+        width: 80%;
+    }
+}
+
+/***********************/
+/******** スマホ ********/
+/***********************/
+@media(max-width:599px) {
+    /* アバウト
+    --------------------------------------------------------- */
+    .profile-img {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    /* ポートフォリオ
+    --------------------------------------------------------- */
+    .portfolio-wrapper .portfolio-box {
+        width: 80%;
+        max-height: 200px;
+        margin: 2%;
+    }
+
+    /* ブログページ
+    --------------------------------------------------------- */
+    .blog-wrapper {
+        padding: 0 8%;
+    }
+
+    .blog-area {
+        width: 100%;
+    }
+
+    .blog-area .item .blur{
+        width: 100%;
+        max-height: 250px;
+    }
+
+    .item-info {
+        font-size: 14px;
+    }
+    .item-info .item-ttl {
+        display: block;
+        font-size: 18px;
+    }
+    .item-info .item-cat,
+    .item-info .item-date {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    /* シングルページ
+    --------------------------------------------------------- */
+    .single-eyecatch {
+        width: 85%;
+    }
+    .single-info .single-ttl {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .single-info .single-cat,
+    .single-info .single-date {
+        display: inline-block;
+        font-size: 12px;
+        margin-bottom: 50px;
+    }
+    .single-info .single-content {
+        font-size: 14px;
+    }
+}
+

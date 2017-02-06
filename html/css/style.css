@@ -1,0 +1,527 @@
+@charset "utf-8";
+
+/* 初期設定
+--------------------------------------------------------- */
+html,body { height:100%; }
+
+
+h1, h2 {
+    color: #222;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+h2 {
+    font-size: medium;
+}
+
+p {
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, textarea {
+    outline: none;
+}
+
+/* 共通
+--------------------------------------------------------- */
+html {
+    background-color: #fdfdfd;
+}
+
+body {
+    font-family: 'Big Caslon', Quicksand, 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1270px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.fade-in {
+    display: none;
+}
+
+.attention {
+    color: #e83929;
+}
+
+.btn {
+    color: white;
+    background-color: #505050;
+    padding: 15px 0;
+    border: none;
+    -webkit-transition: all 0.6s ease;
+       -moz-transition: all 0.6s ease;
+         -o-transition: all 0.6s ease;
+            transition: all 0.6s ease;
+}
+
+.btn:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+/* ヘッダー
+--------------------------------------------------------- */
+header {
+    width: 100%;
+    height: 65px;
+    border-bottom: 1px solid #ddd;
+}
+
+header a {
+    color: #000;
+}
+
+.top-header {
+    background-color: rgba(0,0,0,0.4);
+    border-bottom: none;
+}
+
+.top-header a , .top-header .fa-navicon{
+    color: #fff;
+}
+
+#responsive-menu-bar {
+    display: none;
+}
+
+#responsive-menu {
+    display: none;
+}
+
+.header-left {
+    float: left;
+    margin-top: 6px;
+}
+
+.header-left .logo {
+    font-size: 28px;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+}
+
+.header-left .logo a {
+    position: relative;
+}
+
+.header-left .sub-logo {
+    font-size: 14px;
+    position: absolute;
+    top: 33px;
+    left: 0;
+}
+
+.header-right {
+    float: right;
+    margin-right: 20px;
+    line-height: 65px;
+}
+
+.header-right li {
+    float: left;
+    letter-spacing: .5px;
+}
+
+.header-right a {
+    padding: 5px 10px;
+    -webkit-transition: all .5s;
+       -moz-transition: all .5s;
+        -ms-transition: all .5s;
+         -o-transition: all .5s;
+            transition: all .5s;
+}
+
+header .header-right a:hover {
+    color: rgba(0,0,0,0.4);
+}
+
+.top-header .header-right a:hover {
+    color: rgba(255,255,255,0.5);
+}
+
+.fa-facebook-official {
+    /*font-size: 2em;*/
+}
+
+/* トップページ
+--------------------------------------------------------- */
+.top-page {
+    /*background-image: url('../img/wedding.jpg');*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* アバウトページ
+--------------------------------------------------------- */
+.about-wrapper {
+    /*width: 100%;*/
+    /*margin: 0 auto;*/
+}
+
+.profile-wrapper {
+    padding: 100px 3%;
+    width: 100%;
+    letter-spacing: -0.5em;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.profile-img {
+    width: 30%;
+    display: inline-block;
+    text-align: center; 
+    letter-spacing: normal;
+    padding-right: 6%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.profile-img img{
+    width: 100%;
+}
+
+.profile-txt {
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+}
+
+/* ポートフォリオページ
+--------------------------------------------------------- */
+.portfolio-wrapper {
+    /*text-align: center;*/
+    margin-left: 15%;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.portfolio-wrapper .portfolio-box {
+    display: inline-block;
+    width: 25%;
+    overflow: hidden;
+    height: auto;
+    max-height: 180px;
+    margin: .6%;
+    -webkit-transition: all 0.6s ease;
+       -moz-transition: all 0.6s ease;
+         -o-transition: all 0.6s ease;
+            transition: all 0.6s ease;
+}
+
+.portfolio-wrapper .portfolio-box img {
+    z-index: 0;
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+@media only screen and (min-width: 960px) {
+    .portfolio-wrapper .portfolio-box:hover {
+        transform: translateY(-8px);
+        opacity: 0.8;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+    }
+}
+
+/* ブログページ
+--------------------------------------------------------- */
+.blog-wrapper {
+    letter-spacing: -0.5em;
+    padding: 0 15%;
+    margin-top: 90px;
+}
+
+.blog-area {
+    width: 100%;
+    padding-bottom: 80px;
+    display: inline-block;
+    letter-spacing: normal;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.blog-area .item {
+    width: 100%;
+    margin-bottom: 10%;
+    overflow: hidden;
+}
+.blog-area .item .blur a {
+    color: #000;
+}
+@media only screen and (min-width: 960px) {
+    .blog-area .item .blur {
+        width: 100%;
+        max-height: 500px;
+        overflow: hidden;
+        position: relative;
+    }
+    .blog-area .item .blur img{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .blog-area .item .blur:hover > img{
+        -webkit-filter: blur(3px);
+    }
+    .blog-area .item .blur .overlay {
+        position: absolute;
+        top: 1.45em;
+        left: .5em;
+        width: calc(100% - 1em);
+        height: calc(100% - 3em);
+        background: transparent;
+    }
+    .blog-area .item .blur .overlay::after {
+        content: '';
+        text-align: center;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        opacity: 0;
+        -webkit-transition: all 0.6s ease;
+           -moz-transition: all 0.6s ease;
+             -o-transition: all 0.6s ease;
+                transition: all 0.6s ease;
+    }
+    .blog-area .item .blur:hover .overlay::after,
+    .blog-area .item .blur:hover .hover-ttl{
+        opacity: .65;
+        transform: scale(0.9);
+    }
+    .blog-area .item .blur .hover-ttl {
+        font-size: 18px;
+        position: absolute;
+        top: 45%;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        z-index: 10;
+        opacity: 0;
+        padding: 0 25px;
+        -webkit-transition: all 0.6s ease;
+           -moz-transition: all 0.6s ease;
+             -o-transition: all 0.6s ease;
+                transition: all 0.6s ease;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+             -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+                box-sizing: border-box;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+    }
+}
+.item-info {
+    width: 80%;
+    margin: 5% auto;
+}
+.item-info .item-ttl {
+    display: none;
+}
+.item-info .item-cat {
+    margin-right: 15px;
+}
+.item-info .item-cat,
+.item-info .item-date {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.item-info .item-content {
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+    line-height: 20px;
+}
+.item-info .item-content:before, .item-info .item-content:after {
+    position: absolute;
+    background: #fff;
+}
+.item-info .item-content:before {
+    content: "･･･";
+    bottom: 0;
+    right: 0;
+}
+.item-info .item-content:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ページネーション
+--------------------------------------------------------- */
+.pagination-wrapper {
+    padding-bottom: 70px;
+}
+.pagination {
+  font-size: .9em;
+  line-height: 1.3125em;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  text-align: center;
+}
+.pagination ol {
+  display: inline-block;
+}
+.pagination ol li {
+    float: left;
+    color: #ada6a6;
+    margin-right: 1em;
+    height: 20px;
+    text-align: center;
+    width: 20px;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+.pagination ol li a {
+  color: #ada6a6;
+  display: block;
+  text-decoration: none;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.pagination ol li:hover, .pagination ol li.pagination-current {
+  background: #ada6a6;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  color: #fafafa;
+}
+.pagination ol li:hover a, .pagination ol li.pagination-current a {
+  color: #fafafa;
+}
+
+/* シングルページ
+--------------------------------------------------------- */
+.single-wrapper {
+    padding-bottom: 80px;
+}
+
+.single-eyecatch {
+    width: 80%;
+    margin: 100px auto 50px;
+}
+.single-eyecatch img {
+    width: 100%;
+    height: auto;
+}
+
+.single-info {
+    width: 85%;
+    margin: 0 auto;
+
+}
+.single-info .single-ttl {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.single-info .single-cat {
+    margin-right: 15px;
+}
+.single-info .single-cat,
+.single-info .single-date {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+.single-info .single-content {
+    font-size: 16px;
+}
+.single-info .single-content p {
+    margin-bottom: 14px;
+    line-height: 24px;
+}
+.single-info .single-content a {
+     color: #ada6a6;
+     text-decoration: underline;
+}
+.single-info .single-content img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+}
+
+
+/* お問い合わせページ
+--------------------------------------------------------- */
+.contact-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 90px;
+}
+
+.contact-wrapper .contact-description {
+    text-align: center;
+}
+
+.contact-wrapper .contact-description h2 {
+    font-size: 24px;
+    margin: 80px 0 30px;
+}
+
+.contact-wrapper .contact-form {
+    margin-top: 60px;
+}
+
+.contact-wrapper .contact-form input[type=text],
+.contact-wrapper .contact-form input[type=email],
+.contact-wrapper .contact-form textarea {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.contact-wrapper .contact-form input[type=text],
+.contact-wrapper .contact-form input[type=email] {
+    height: 30px;
+}
+
+.contact-wrapper .contact-form .btn-wrapper {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-wrapper .contact-form .btn-send {
+    width: 50%;
+    margin-top: 30px;
+}
+
