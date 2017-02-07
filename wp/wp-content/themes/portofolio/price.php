@@ -12,10 +12,10 @@ for ($i = 1; $i <= $price_type_count; $i++) {
     $price_type_key = 'price_type'.$i;
     $price_key      = 'price'.$i;
 
-    if (!empty($price_types[$i]['type'] = $custom_fields[$price_type_key][0])) {
+    if (!empty($custom_fields[$price_type_key][0])) {
         $price_types[$i]['type'] = $custom_fields[$price_type_key][0];
     }
-    if (!empty($price_types[$i]['price'] = $custom_fields[$price_key][0])) {
+    if (!empty($custom_fields[$price_key][0])) {
         $price_types[$i]['price'] = $custom_fields[$price_key][0];
     }
 }
