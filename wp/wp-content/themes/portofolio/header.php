@@ -26,8 +26,8 @@
                     <li><a href="<?php echo esc_url(home_url()); ?>/price">Price</a></li>
                     <li><a href="<?php echo esc_url(home_url()); ?>/blog">Blog</a></li>
                     <li><a href="<?php echo esc_url(home_url()); ?>/contact">Contact</a></li>
-                    <li><a href="#"><span class="fa fa-instagram fa-lg"></span></a></li>
-                    <li><a href="#"><span class="fa fa-facebook-official fa-lg"></span></a></li>
+                    <li><a href="https://www.instagram.com/__photomove12/?hl=ja" target="_blank"><span class="fa fa-instagram fa-lg"></span></a></li>
+                    <li><a href="https://www.facebook.com/atsushi.yagishita.3?fref=ts" target="_blank"><span class="fa fa-facebook-official fa-lg"></span></a></li>
                 </ul>
             </div>
 
@@ -39,8 +39,8 @@
                     <li><a href="<?php echo esc_url(home_url()); ?>/price">Price</a></li>
                     <li><a href="<?php echo esc_url(home_url()); ?>/blog">Blog</a></li>
                     <li><a href="<?php echo esc_url(home_url()); ?>/contact">Contact</a></li>
-                    <li><a href="#"><span class="fa fa-instagram fa-lg"></span> Instagram</a></li>
-                    <li><a href="#"><span class="fa fa-facebook-official fa-lg"></span> Facebook</a></li>
+                    <li><a href="https://www.instagram.com/__photomove12/?hl=ja" target="_blank"><span class="fa fa-instagram fa-lg"></span> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/atsushi.yagishita.3?fref=ts" target="_blank"><span class="fa fa-facebook-official fa-lg"></span> Facebook</a></li>
                 </ul>
             </div>
         </div>
