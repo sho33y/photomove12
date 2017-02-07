@@ -39,6 +39,8 @@
             -ms-transition: all .25s;
              -o-transition: all .25s;
                 transition: all .25s;
+        display: inline-block;
+        width: 100%;
     }
 
     #responsive-menu li a:hover {
