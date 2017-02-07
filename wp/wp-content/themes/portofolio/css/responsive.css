@@ -177,10 +177,14 @@
 
     /* ポートフォリオ
     --------------------------------------------------------- */
+    .portfolio-wrapper {
+        margin-left: 0;
+    }
+
     .portfolio-wrapper .portfolio-box {
-        width: 80%;
+        width: 100%;
         max-height: 200px;
-        margin: 2%;
+        margin: 2% auto;
     }
 
     /* 料金表ページ
