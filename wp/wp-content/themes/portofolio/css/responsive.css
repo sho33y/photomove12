@@ -179,6 +179,7 @@
     --------------------------------------------------------- */
     .portfolio-wrapper {
         margin-left: 0;
+        margin: 0 15px;
     }
 
     .portfolio-wrapper .portfolio-box {
