@@ -40,9 +40,7 @@ for ($i = 1; $i <= $price_type_count; $i++) {
             </table>
 
             <div class="location-description">
-                <p>《撮影場所について》</p>
-                <p>ご要望に沿ったロケーションをご提案させていただきます。また、ロケーション指定も承ります</p>
-                <!-- <p>また、ロケーション指定も承ります</p> -->
+                <?php echo nl2br($custom_fields['location'][0]); ?>
             </div>
         </div>
     </div>
