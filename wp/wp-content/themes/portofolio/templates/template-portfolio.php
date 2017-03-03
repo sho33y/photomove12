@@ -4,9 +4,10 @@
             <?php while (have_posts()): ?>
             <?php the_post(); ?>
                 <div class="portfolio-box">
-                    <?php $imageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium'); ?>
-                    <a href="<?php echo $imageUrl[0]; ?>" class="swipebox" rel="portfolio">
-                        <img src="<?php echo $imageUrl[0]; ?>" alt="<?php echo $portfolio->post_title; ?>">
+                    <?php $imageThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium'); ?>
+                    <?php $imageFull = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full'); ?>
+                    <a href="<?php echo $imageFull[0]; ?>" class="swipebox" rel="portfolio">
+                        <img src="<?php echo $imageThumbnail[0]; ?>" alt="<?php echo $portfolio->post_title; ?>">
                     </a>
                 </div>
             <?php endwhile; ?>

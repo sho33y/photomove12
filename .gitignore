@@ -2,4 +2,5 @@ wp/.htaccess
 wp/wp-config.php
 wp/wp-content/uploads/*
 
+.idea/*
 .DS_Store
