@@ -6,6 +6,8 @@
     <title>Porfolio</title>
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- OGP -->
+    <?php echo_ogp_tags(); ?>
     <?php wp_head(); ?>
 </head>
 <body class="<?php echo getWrapperClass(); ?>">
