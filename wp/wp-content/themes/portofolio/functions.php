@@ -23,7 +23,7 @@ add_theme_support('post-thumbnails');
 
 function get_ogp_image() {
     // デフォルトの OGP 用画像
-    $image = get_template_directory_uri() . '/img/common/ogp.png';
+    $image = get_template_directory_uri() . '/img/common/ogp.jpg';
 
     if (is_single()) {
         global $post;
